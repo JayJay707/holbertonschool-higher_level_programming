@@ -39,8 +39,6 @@ class Square:
         if self.__size == 0:
             print()
             return()
-        for k in range(self.__position[1]):
-            print()
         for _ in range(self.__size):
             for i in range(self.__position[0]):
                 print(" ", end='')
@@ -64,3 +62,6 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
+
+my_square = Square(3, (1, 1))
+my_square.my_print()
