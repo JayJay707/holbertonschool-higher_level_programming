@@ -62,6 +62,3 @@ class Square:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
-
-my_square = Square(3, (1, 1))
-my_square.my_print()
