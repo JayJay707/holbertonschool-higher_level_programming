@@ -4,17 +4,17 @@
 
 class Rectangle:
     """Rectangle class"""
-    
+
     def __init__(self, width=0, height=0):
         """Initialization method"""
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         """Width getter"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """Width setter"""
@@ -28,7 +28,7 @@ class Rectangle:
     def height(self):
         """Height getter"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """Height setter"""
