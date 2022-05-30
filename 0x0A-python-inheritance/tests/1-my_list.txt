@@ -14,4 +14,3 @@
 >>> mylist = MyList([])
 >>> mylist.print_sorted()
 []
-
