@@ -2,9 +2,6 @@
 """Module BaseGeometry"""
 
 
-from multiprocessing.dummy import Value
-
-
 class BaseGeometry():
     """Empty class"""
     def area(self):
