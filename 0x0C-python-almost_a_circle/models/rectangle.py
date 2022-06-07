@@ -46,7 +46,7 @@ class Rectangle(Base):
     def height(self, value):
         """Height setter"""
         if type(value) is not int:
-                raise TypeError("height must be an integer")
+            raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
@@ -64,7 +64,7 @@ class Rectangle(Base):
     def y(self, value):
         """Y setter"""
         if type(value) is not int:
-                raise TypeError("y must be an integer")
+            raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
@@ -110,4 +110,4 @@ class Rectangle(Base):
     def to_dictionary(self):
         """Returns a dictionary representation of the rectangle"""
         return {'id': self.id, 'width': self.width,
-                'height': self.height, 'x': self.x, 'y': self.y}          
+                'height': self.height, 'x': self.x, 'y': self.y}
