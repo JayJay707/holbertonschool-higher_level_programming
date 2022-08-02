@@ -1,10 +1,11 @@
 #!/usr/bin/node
 const Rectangle = require('./4-rectangle.js');
-constructor (size) {
-  super(size, size);
-}
 
-class Square extends SquareA {
+class Square extends Rectangle {
+  constructor (size) {
+    super(size, size);
+  }
+
   charPrint (c) {
     if (c === undefined) {
       c = 'X';
